@@ -1,0 +1,25 @@
+{
+  "configurations": [
+  {
+    "name": "(gdb) Launch",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "${workspaceFolder}/a.out",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${fileDirname}",
+    "environment": [],
+    "externalConsole": true,
+    "MIMode": "gdb",
+    "setupCommands": [
+        {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+        }
+    ],
+    "preLaunchTask": "C/C++: gcc build active file",
+    "miDebuggerPath": "/usr/bin/gdb"
+  }
+  ]
+}
